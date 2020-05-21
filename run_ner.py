@@ -356,11 +356,12 @@ def main():
     parser.add_argument('--server_ip', type=str, default='', help="Can be used for distant debugging.")
     parser.add_argument('--server_port', type=str, default='', help="Can be used for distant debugging.")
     args = parser.parse_args()
-    logger.info('---ARGS---\n{}'.format(args)
+
+    logger.info('---ARGS---\n{}'.format(args))
     logger.info('---SERVER_IP---\n{}'.format(args.server_ip))
     logger.info('---SERVER_PORT---\n{}'.format(args.server_port))
-    logger.info('---LOCAL_RANK---\n{}'.format(args.local_rank)
-    logger.info('---NO_CUDE---\n{}'.format(args.no_cuda)
+    logger.info('---LOCAL_RANK---\n{}'.format(args.local_rank))
+    logger.info('---NO_CUDE---\n{}'.format(args.no_cuda))
     logger.info('---GradientSteps---\n{}'.format(args.gradient_accumulation_steps))
          
 
